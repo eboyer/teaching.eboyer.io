@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Your styles here */
+body{
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+}

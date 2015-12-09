@@ -1,0 +1,48 @@
+/*
+----------------------------------------------------------------
+  S E T U P
+---------------------------------------------------------------- */
+@import "bourbon";
+@import "koi/koi";
+
+/*
+----------------------------------------------------------------
+  K O I  O V E R R I D E S
+---------------------------------------------------------------- */
+$primaryFontFamily: "adobe-garamond-pro", Georgia, serif;
+$secondaryFontFamily: "proxima-nova", Arial, sans-serif;
+
+$colorPrimary: #5a6aeb; //purple
+$colorSecondary: #2fe7be; //green
+
+$colorBodyCopy: #76829f; //light body copy
+$colorLtGrey: #e8ebf2; //light grey
+$colorLtrGrey: #f3f4f6; //light grey
+
+$largeBreak: 960px;
+$mediumBreak: 600px;
+
+@import "animate";
+@import "typography";
+
+body{
+  background: #fff;
+  color: $colorBodyCopy;
+  font-family: $primaryFontFamily;
+  cursor: url("../images/hotdog-small.png"), default;
+}
+
+// Link Behavior
+a{
+  color: $colorPrimary;
+  text-decoration: none;
+  &:hover{ color: $colorPrimary; text-decoration: underline; }
+}
+
+/*
+----------------------------------------------------------------
+  S T R U C T U R E
+---------------------------------------------------------------- */
+@import "structure/base";
+@import "structure/identity";
+@import "structure/content";

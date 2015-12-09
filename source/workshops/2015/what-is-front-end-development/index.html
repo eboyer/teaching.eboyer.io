@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Delicious Lunch</title>
+		<style>
+			@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+			body{
+				font-family: 'Open Sans', sans-serif;
+				background: #fff;
+				font-weight: 400;
+			}
+			strong{ font-weight: 700; }
+			.site{
+				padding: 50px;
+			}
+			.menu{
+				width: 500px;
+				margin: 0 auto;
+				background: #efefef;
+				padding: 20px;
+			}
+			h1{
+				margin: 0 0 20px 0;
+			}
+			p{
+				font-size: 14px;
+				margin: 0 0 10px 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: square;
+			}
+			ul li{
+				margin: 0 0 30px 15px;
+			}
+			ul li:last-child{ margin-bottom: 0; }
+		</style>
+	</head>
+	<body>
+		<div class="site">
+			<div class="menu">
+				<h1>Lunch Specials</h1>
+				<ul>
+					<li>
+						<p><strong>Tacos</strong> <span class="price">$.99</span> each <a href="#" class="js-showhide">[+]</a></p> 
+						<p class="desc js-desc">Our Tacos are made with all fresh ingredients.</p>
+					</li>
+					<li>
+						<p><strong>Burritos</strong> <span class="price">$4.49</span> each <a href="#" class="js-showhide">[+]</a></p> 
+						<p class="desc js-desc">Our Burritos are made with all fresh ingredients.</p>
+					</li>
+					<li>
+						<p><strong>Tostadas</strong> <span class="price">$1.99</span> each <a href="#" class="js-showhide">[+]</a></p> 
+						<p class="desc js-desc">Our Tostadas are made with all fresh ingredients.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			$(".js-showhide").on("click", function(e){
+				e.preventDefault();
+				$(this).closest("p").next().toggle();
+			});
+		</script>
+	</body>
+</html>

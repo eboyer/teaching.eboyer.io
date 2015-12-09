@@ -1,0 +1,75 @@
+@import "reset-goal.css";
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+body{
+	background: url(../assets/bg2.png) 0 0 repeat;
+}
+
+.menu{
+	margin: 20px auto;
+	padding: 25px 50px;
+	background: #ffffff;
+	width: 700px;
+	text-align: center;
+	position: relative;
+}
+
+.logo{
+	margin: 0 auto 20px auto;
+	display: block;
+}
+
+h1,
+h2,
+h3{
+	margin: 0 0 5px 0;
+}
+
+h1{
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: bold;
+}
+h2{
+	font-size: 22px;
+	line-height: 32px;
+}
+h3{
+	margin: 0 0 10px 0;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+p{
+	margin: 0 0 20px 0;
+}
+
+p.with-sub{
+	margin-bottom: 0;
+}
+
+p span.price{
+	font-weight: bold;
+}
+
+p.allergy,
+p.cash-only{
+	display: inline-block;
+	border-radius: 25px;
+	background: black;
+	color: #fff;
+	padding: 20px;
+	font-size: 18px;
+	line-height: 28px;
+}
+p.cash-only{
+	font-weight: bold;
+}
