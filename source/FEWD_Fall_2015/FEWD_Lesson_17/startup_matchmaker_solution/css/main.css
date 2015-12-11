@@ -193,11 +193,12 @@ footer {
 	}
 	#page-header h1{
 		float: none;
-		margin: 0 0 10px 0;
+		margin: 0 0 15px 0;
 		text-align: center;
 	}
 	#page-header nav{
 		float: none;
+		display: none;
 	}
 	#page-header nav li{
 		float: none;
@@ -208,6 +209,7 @@ footer {
 	}
 	#page-header nav a{
 		padding: 10px;
+		font-size: 1.25rem;
 	}
 	.banner{
 		padding: 0;
