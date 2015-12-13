@@ -1,0 +1,21 @@
+nav.teaching-navigation{
+	overflow: hidden;
+	margin: 0 0 20px 0;
+	ul{
+		@include nav;
+		li{
+			float: left; 
+			display: inline;
+			margin: 0 0 0 10px;
+			&:first-child{
+				margin-left: 0;
+			}
+			a{
+				display: block;
+				text-transform: uppercase;
+				font-size: 12px;
+				font-weight: 600;
+			}
+		}
+	}
+}

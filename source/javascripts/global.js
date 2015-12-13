@@ -3,8 +3,13 @@
 var eb = {};
 
 eb.init = function() {
-  //functions here
-  
+  eb.scrolling();
 };
+
+eb.scrolling = function() {
+	$.localScroll({
+		offset: -20
+	});
+}
 
 $(function() { eb.init(); });
