@@ -1,0 +1,99 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* Your styles here */
+body{
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+}
+
+.box{
+	float: left; display: inline;
+	border: 1px solid #ccc;
+	text-align: center;
+	background: #efefef;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.box.ui-draggable-dragging{
+	border: 1px dashed red;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+}
+
+.box1{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.box2{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.box3{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.box4{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.box5{
+	position: absolute;
+	top: 10px;
+	left: 150px;
+}
+
+.droppable{
+	position: absolute;
+	top: 150px;
+	left: 150px;
+}
+
+/* It gets this class when you are currently dragging something, to show something can be dropped on it */
+.droppable.ui-state-hover{
+	border: 1px dashed red;
+	background: #999;
+	color: red;
+}
+
+/* It gets this class when you are currently dragging something and you're positioned over top of the droppable area */
+.droppable.ui-state-active{
+	border: 1px dashed blue;
+	background: #999;
+	color: blue;
+}
+
+/* It gets this class after you drop something on top of the droppable area */
+.droppable.ui-state-dropped{
+	border: 1px dashed yellow;
+	background: #999;
+	color: yellow;
+}
+
+.grid{
+	background: black;
+	overflow: hidden;
+	margin: 100px auto;
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
