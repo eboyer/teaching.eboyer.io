@@ -7,6 +7,9 @@ nav.teaching-navigation{
 			float: left; 
 			display: inline;
 			margin: 0 0 0 10px;
+			&.afk {
+				text-decoration: line-through;
+			}
 			&:first-child{
 				margin-left: 0;
 			}
