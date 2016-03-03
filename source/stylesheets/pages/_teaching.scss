@@ -7,9 +7,6 @@ nav.teaching-navigation{
 			float: left; 
 			display: inline;
 			margin: 0 0 0 10px;
-			&.afk {
-				text-decoration: line-through;
-			}
 			&:first-child{
 				margin-left: 0;
 			}
@@ -18,6 +15,9 @@ nav.teaching-navigation{
 				text-transform: uppercase;
 				font-size: 12px;
 				font-weight: 600;
+			}
+			&.afk a{
+				text-decoration: line-through;
 			}
 		}
 	}
